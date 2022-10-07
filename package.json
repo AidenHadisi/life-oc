@@ -5,10 +5,24 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@nuxtjs/tailwindcss": "^5.3.3",
-    "nuxt": "3.0.0-rc.11"
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "animate.css": "^4.1.1",
+    "eslint": "^8.24.0",
+    "eslint-config-alloy": "^4.7.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "nuxt": "3.0.0-rc.11",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-tsc": "^0.40.13"
   }
 }

@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Anek Latin", "sans-serif"],
-      },
-    },
+        display: ['Anek Latin', 'sans-serif']
+      }
+    }
   },
-  plugins: [],
-};
+  plugins: []
+}

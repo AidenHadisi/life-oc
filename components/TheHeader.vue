@@ -1,6 +1,7 @@
+<!-- eslint-disable vue/html-self-closing -->
 <template>
   <div
-    class="w-full h-screen relative overflow-hidden flex items-center justify-center bg-black text-center p-2"
+    class="w-full h-screen relative overflow-hidden flex items-center justify-center bg-black text-center p-2 animate__animated animate__fadeIn animate__slower"
   >
     <video
       playsinline
@@ -11,6 +12,15 @@
     >
       <source src="/img/video.mp4" type="video/mp4" />
     </video>
-    <div class="text-8xl text-white relative font-display font-extrabold drop-shadow-lg opacity-70">Life Church Of Orange</div>
+
+    <div class="relative">
+      <div
+        class="text-8xl text-white font-display font-extrabold drop-shadow-lg opacity-70"
+      >
+        Life Church Of Orange
+      </div>
+
+      <AButton class="" />
+    </div>
   </div>
 </template>

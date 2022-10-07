@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:vue/essential",
+    "plugin:@typescript-eslint/recommended",
+    "alloy",
+    "alloy/vue",
+    "alloy/typescript",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {}
+}

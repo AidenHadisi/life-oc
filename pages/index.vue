@@ -1,5 +1,6 @@
 <template>
   <div>
-    <TheHeader></TheHeader>
+    <TheNavbar />
+    <TheHeader />
   </div>
 </template>

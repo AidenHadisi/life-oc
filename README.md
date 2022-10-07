@@ -3,11 +3,12 @@
 A website created by me for Life OC church.
 
 Built With:
-* [Vue 3 composition API](https://vuejs.org/)
-* [Typescript](https://www.typescriptlang.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [GraphQL Api](https://graphql.org/)
-* Powered by [NuxtJS 3](https://v3.nuxtjs.org/). 
+
+- [Vue 3 composition API](https://vuejs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GraphQL Api](https://graphql.org/)
+- Powered by [NuxtJS 3](https://v3.nuxtjs.org/).
 
 ## Setup
 
