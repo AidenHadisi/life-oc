@@ -21,20 +21,45 @@
       </div>
 
       <div
-        v-if="isLive"
+        v-if="!isLive"
         class="p-3 animate__animated animate__zoomIn animate__slow animate__delay-2s"
       >
         <HeaderButton class="text-xl">
           Watch Live Stream
         </HeaderButton>
       </div>
-      <div class="font-display font-bold flex-col flex items-center">
-        <TheCounter :duration="timeUntil" />
-        <div class="text-3xl lg:text-5xl mb-8">
-          Until Next Live Stream
+    </div>
+    <footer class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 p-5">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center gap-6"
+      >
+        <div class="text-left">
+          <div class="text-md lg:text-xl">
+            Join Us
+          </div>
+          <div class="text-lg lg:text-2xl">
+            Sundays • 10:15 AM
+          </div>
+        </div>
+        <TheCounter />
+        <div class="flex justify-center gap-2">
+          <a
+            href="https://www.youtube.com/channel/UCoVX240Rcw6ek5Opx2J84QA"
+            target="_blank"
+          ><img
+            src="/img/youtube.svg"
+            width="50px"
+          /></a>
+          <a
+            href="https://www.facebook.com/lifechurchorangeca"
+            target="_blank"
+          ><img
+            src="/img/facebook.svg"
+            width="50px"
+          /></a>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
 </template>
 

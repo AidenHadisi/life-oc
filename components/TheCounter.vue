@@ -1,30 +1,50 @@
 <template>
-  <div class="mb-4 text-indigo-500 text-3xl lg:text-8xl">
-    {{ time.value }} {{ time.label }}
+  <div class="columns-4 max-w-full text-md lg:text-xl gap-3">
+    <div>
+      <div class="text-[200%] text-indigo-500 font-extrabold">
+        {{ timeUntil.days() }}
+      </div>
+      <div>Days</div>
+    </div>
+    <div>
+      <div class="text-[200%] text-indigo-500 font-extrabold">
+        {{ timeUntil.hours() }}
+      </div>
+      <div>Hours</div>
+    </div>
+    <div>
+      <div class="text-[200%] text-indigo-500 font-extrabold">
+        {{ timeUntil.minutes() }}
+      </div>
+      <div>Minutes</div>
+    </div>
+    <div>
+      <div class="text-[200%] text-indigo-500 font-extrabold">
+        {{ timeUntil.seconds() }}
+      </div>
+      <div>Seconds</div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-interface Props {
-  duration: moment.Duration
-}
+import moment from 'moment-timezone'
 
-const props = defineProps<Props>()
-const { duration } = toRefs(props)
+const now = ref(moment.tz('America/Los_Angeles'))
+const nextLiveStream = moment
+  .tz('America/Los_Angeles')
+  .endOf('isoWeek')
+  .set({ hour: 10, minute: 15, second: 0 })
 
-const time = computed<{ value: number; label: string }>(() => {
-  if (duration.value.days()) {
-    return { value: duration.value.days(), label: 'Days' }
-  }
+const timeUntil = ref(moment.duration(nextLiveStream.diff(now.value)))
 
-  if (duration.value.hours()) {
-    return { value: duration.value.hours(), label: 'Hours' }
-  }
+onMounted(() => {
+  setInterval(() => {
+    now.value = moment.tz('America/Los_Angeles')
+  }, 1000)
+})
 
-  if (duration.value.minutes()) {
-    return { value: duration.value.minutes(), label: 'Minutes' }
-  }
-
-  return { value: duration.value.seconds(), label: 'Seconds' }
+watch(now, () => {
+  timeUntil.value = moment.duration(nextLiveStream.diff(now.value))
 })
 </script>
