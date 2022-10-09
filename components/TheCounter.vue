@@ -1,5 +1,5 @@
 <template>
-  <div class="columns-4 max-w-full text-md lg:text-xl gap-3">
+  <div class="columns-4 max-w-full text-sm lg:text-xl gap-3">
     <div>
       <div class="text-[200%] text-indigo-500 font-extrabold">
         {{ timeUntil.days() }}

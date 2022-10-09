@@ -31,13 +31,13 @@
     </div>
     <footer class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 p-5">
       <div
-        class="container mx-auto flex flex-wrap justify-between items-center gap-6"
+        class="container mx-auto flex flex-wrap flex-col lg:flex-row justify-center lg:justify-between items-center gap-3 lg:gap-6"
       >
         <div class="text-left">
-          <div class="text-md lg:text-xl">
+          <div class="text-lg lg:text-xl inline lg:block">
             Join Us
           </div>
-          <div class="text-lg lg:text-2xl">
+          <div class="text-lg lg:text-2xl inline lg:block">
             Sundays • 10:15 AM
           </div>
         </div>
@@ -48,14 +48,14 @@
             target="_blank"
           ><img
             src="/img/youtube.svg"
-            width="50px"
+            class="w-[40px] lg:w-[50px]"
           /></a>
           <a
             href="https://www.facebook.com/lifechurchorangeca"
             target="_blank"
           ><img
             src="/img/facebook.svg"
-            width="50px"
+            class="w-[40px] lg:w-[50px]"
           /></a>
         </div>
       </div>
