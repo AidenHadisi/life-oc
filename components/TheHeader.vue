@@ -14,20 +14,11 @@
     </video>
 
     <div class="relative px-12">
-      <div
-        class="mb-8 text-6xl lg:text-8xl font-display font-extrabold drop-shadow-lg animate__animated animate__slow animate__fadeInUp"
-      >
-        Life Church of Orange
-      </div>
-
-      <div
-        v-if="!isLive"
-        class="p-3 animate__animated animate__zoomIn animate__slow animate__delay-2s"
-      >
-        <HeaderButton class="text-xl">
-          Watch Live Stream
-        </HeaderButton>
-      </div>
+      <img
+        class="max-h-[calc(100vh_-_300px)] opacity-80 animate__animated animate__zoomIn animate__slow"
+        src="/img/logo.png"
+        alt="logo"
+      />
     </div>
     <footer class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 p-5">
       <div
@@ -82,12 +73,5 @@ onMounted(() => {
 
 watch(now, () => {
   timeUntil.value = moment.duration(nextLiveStream.diff(now.value))
-})
-
-const isLive = computed(() => {
-  const startTime = now.value.set({ hour: 10, minute: 45, second: 0 })
-  const endTime = now.value.set({ hour: 12, minute: 0, second: 0 })
-
-  return now.value.isoWeekday() === 7 && now.value.isBetween(startTime, endTime)
 })
 </script>
