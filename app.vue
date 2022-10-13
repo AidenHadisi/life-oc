@@ -24,6 +24,6 @@ useHead({
 
 <style>
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 </style>

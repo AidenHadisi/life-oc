@@ -23,8 +23,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Roboto: true,
-      'Anek Latin': true
+      Montserrat: true,
+      Coda: true
     }
   }
 })

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Anek Latin', 'sans-serif'],
+        display: ['Coda', 'cursive'],
         sans: ['Roboto', 'sans-serif']
       },
       colors: {

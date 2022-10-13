@@ -1,15 +1,20 @@
 <template>
-  <div class="w-full fixed top-0 right-0 z-20 font-display">
+  <div
+    class="w-full fixed top-0 right-0 z-20 font-display uppercase bg-gray-900"
+  >
     <nav
-      class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
+      class="container mx-auto py-2 px-3 md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
-        <NuxtLink
-          to="/"
-          class="text-xl text-gray-100 md:text-2xl hover:text-indigo-400"
-        >
-          Life Church Of Orange
-        </NuxtLink>
+        <div class="flex items-center justify-center">
+          <img class="w-[70px] inline-block mr-2" src="/img/logo.png" alt="logo">
+          <NuxtLink
+            to="/"
+            class="text-xl text-gray-100 md:text-2xl hover:text-indigo-400"
+          >
+            Life Church Of Orange
+          </NuxtLink>
+        </div>
         <!-- Mobile menu button -->
         <div class="flex md:hidden" @click="toggleNav">
           <button

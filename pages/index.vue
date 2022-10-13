@@ -7,7 +7,7 @@
     >
       <div class="p-5" data-aos="fade-right" data-aos-duration="2000">
         <h2
-          class="font-display text-3xl inline-block border-b-4 border-brown pr-8 pb-2 mb-3 text-left"
+          class="text-3xl inline-block border-b-4 border-brown pr-8 pb-2 mb-3 text-left font-bold"
         >
           About Us
         </h2>
