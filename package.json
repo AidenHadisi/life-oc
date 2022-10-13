@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@nuxtjs/google-fonts": "^3.0.0-0",
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "@types/aos": "^3.0.4",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
     "animate.css": "^4.1.1",
@@ -26,6 +28,8 @@
     "vue-tsc": "^0.40.13"
   },
   "dependencies": {
+    "@nuxtjs/robots": "^2.5.0",
+    "aos": "^2.3.4",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.37"
   }

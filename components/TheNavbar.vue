@@ -6,7 +6,7 @@
       <div class="flex items-center justify-between">
         <NuxtLink
           to="/"
-          class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400"
+          class="text-xl text-gray-100 md:text-2xl hover:text-indigo-400"
         >
           Life Church Of Orange
         </NuxtLink>
@@ -30,17 +30,23 @@
       <ul
         :class="[
           showMenu ? 'flex' : 'hidden',
-          'flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0'
+          'flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 text-lg font-display'
         ]"
       >
         <li class="text-gray-100 hover:text-indigo-400">
-          Home
+          <NuxtLink to="https://c2cfamily.org/#resources" target="_blank">
+            C2C Study Resources
+          </NuxtLink>
         </li>
         <li class="text-gray-100 hover:text-indigo-400">
-          About
+          <NuxtLink to="https://lifeoc.churchcenter.com/giving" target="_blank">
+            Give Online
+          </NuxtLink>
         </li>
         <li class="text-gray-100 hover:text-indigo-400">
-          Blogs
+          <NuxtLink to="https://lifeoc.churchcenter.com/giving" target="_blank">
+            Services
+          </NuxtLink>
         </li>
         <li class="text-gray-100 hover:text-indigo-400">
           Contact Us

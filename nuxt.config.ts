@@ -7,16 +7,24 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true
   },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxtjs/google-fonts'],
   runtimeConfig: {
     public: {
       apiBase: '/api'
     }
   },
   head: {
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.ico' }],
+
+    meta: [{ name: 'description', content: 'Life Church of Orange California' }]
   },
   vite: {
     plugins: [eslintPlug()]
+  },
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Anek Latin': true
+    }
   }
 })
