@@ -1,13 +1,12 @@
 <template>
-  <div
-    class="w-full fixed top-0 right-0 z-20 font-display uppercase bg-gray-900"
+  <nav
+    class="w-full fixed top-0 right-0 z-20 font-display uppercase bg-gray-900 p-3"
   >
     <nav
-      class="container mx-auto py-2 px-3 md:flex md:justify-between md:items-center"
+      class="container mx-auto py-3 px-3 md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-center">
-          <img class="w-[70px] inline-block mr-2" src="/img/logo.png" alt="logo">
           <NuxtLink
             to="/"
             class="text-xl text-gray-100 md:text-2xl hover:text-indigo-400"
@@ -38,29 +37,56 @@
           'flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 text-lg font-display'
         ]"
       >
-        <li class="text-gray-100 hover:text-indigo-400">
-          <NuxtLink to="https://c2cfamily.org/#resources" target="_blank">
-            C2C Study Resources
-          </NuxtLink>
-        </li>
-        <li class="text-gray-100 hover:text-indigo-400">
-          <NuxtLink to="https://lifeoc.churchcenter.com/giving" target="_blank">
-            Give Online
-          </NuxtLink>
-        </li>
-        <li class="text-gray-100 hover:text-indigo-400">
-          <NuxtLink to="https://lifeoc.churchcenter.com/giving" target="_blank">
-            Services
-          </NuxtLink>
-        </li>
-        <li class="text-gray-100 hover:text-indigo-400">
-          Contact Us
-        </li>
+        <NavbarItem
+          v-for="menu of menuList"
+          :key="menu.id"
+          :uri="menu.uri"
+          :label="menu.label"
+        />
       </ul>
     </nav>
-  </div>
+  </nav>
 </template>
 <script setup lang="ts">
+const menuList = ref([
+  { id: 1, uri: '/', label: 'Home' },
+  { id: 1, uri: 'https://c2cfamily.org/#resources', label: 'C2C Resources' }
+])
+
+// export interface MenuItem {
+//   id: string
+//   label: string
+//   uri: string
+// }
+
+// interface MenuItemsResponse {
+//   menuItems: {
+//     edges: {
+//       node: MenuItem
+//     }[]
+//   }
+// }
+
+// const query = gql`
+//   query getMenuItems {
+//     menuItems {
+//       edges {
+//         node {
+//           id
+//           label
+//           uri
+//         }
+//       }
+//     }
+//   }
+// `
+
+// const { data: menuResponse, error } = await useAsyncQuery<MenuItemsResponse>(query)
+
+// console.log(error)
+
+// console.log(menuResponse.value)
+
 const showMenu = ref(false)
 const toggleNav = () => {
   showMenu.value = !showMenu.value

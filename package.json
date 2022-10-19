@@ -10,7 +10,12 @@
     "format:fix": "prettier --write ."
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27768165.4b0219a",
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/apollo": "^5.0.0-alpha.2",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@nuxtjs/google-fonts": "^3.0.0-0",
+    "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/tailwindcss": "^5.3.3",
     "@types/aos": "^3.0.4",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
@@ -27,8 +32,6 @@
     "vue-tsc": "^0.40.13"
   },
   "dependencies": {
-    "@nuxtjs/google-fonts": "^3.0.0-0",
-    "@nuxtjs/robots": "^2.5.0",
     "aos": "^2.3.4",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.37"

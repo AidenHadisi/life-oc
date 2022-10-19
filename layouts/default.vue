@@ -1,6 +1,7 @@
 <template>
   <div>
-    <header>Test</header>
+    <TheNavbar />
     <slot />
+    <TheFooter />
   </div>
 </template>

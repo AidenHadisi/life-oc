@@ -7,7 +7,13 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/robots',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/apollo',
+    '@nuxt/image-edge'
+  ],
   runtimeConfig: {
     public: {
       apiBase: '/api'
@@ -25,6 +31,14 @@ export default defineNuxtConfig({
     families: {
       Montserrat: true,
       Coda: true
+    }
+  },
+
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: 'https://cms.lifeoc.org/graphql'
+      }
     }
   }
 })

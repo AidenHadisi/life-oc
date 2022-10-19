@@ -15,7 +15,7 @@
 
     <div class="relative px-12">
       <img
-        class="max-h-[calc(100vh_-_300px)] opacity-80 animate__animated animate__zoomIn animate__slow"
+        class="max-h-[calc(100vh_-_300px)] opacity-80 animate__animated animate__zoomIn animate__slower"
         src="/img/logo.png"
         alt="logo"
       />
@@ -39,39 +39,17 @@
             target="_blank"
           ><img
             src="/img/youtube.svg"
-            class="w-[40px] lg:w-[50px]"
+            class="w-[40px] lg:w-[50px] hover:scale-125 duration-300"
           /></a>
           <a
             href="https://www.facebook.com/lifechurchorangeca"
             target="_blank"
           ><img
             src="/img/facebook.svg"
-            class="w-[40px] lg:w-[50px]"
+            class="w-[40px] lg:w-[50px] hover:scale-125 duration-300"
           /></a>
         </div>
       </div>
     </footer>
   </div>
 </template>
-
-<script setup lang="ts">
-import moment from 'moment-timezone'
-
-const now = ref(moment.tz('America/Los_Angeles'))
-const nextLiveStream = moment
-  .tz('America/Los_Angeles')
-  .endOf('isoWeek')
-  .set({ hour: 10, minute: 45, second: 0 })
-
-const timeUntil = ref(moment.duration(nextLiveStream.diff(now.value)))
-
-onMounted(() => {
-  setInterval(() => {
-    now.value = moment.tz('America/Los_Angeles')
-  }, 1000)
-})
-
-watch(now, () => {
-  timeUntil.value = moment.duration(nextLiveStream.diff(now.value))
-})
-</script>
