@@ -2,6 +2,6 @@
   <div>
     <TheHeader />
     <AboutUs />
-    <GiveOnline />
+    <JoinUs />
   </div>
 </template>
