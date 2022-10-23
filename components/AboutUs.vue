@@ -17,7 +17,7 @@
       </p>
     </div>
     <nuxt-img
-      class="rounded-xl shadow-lg shadow-gray-500 h-full"
+      class="rounded-xl shadow-lg shadow-gray-500"
       src="/img/img1.jpg"
       alt="exterior image"
       width="500"
