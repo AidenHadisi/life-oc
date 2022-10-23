@@ -21,6 +21,7 @@
       src="/img/img1.jpg"
       alt="exterior image"
       height="300"
+      width="500"
       format="webp"
       data-aos="zoom-in-left"
       data-aos-duration="3000"
