@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container mx-auto p-8 flex flex-wrap lg:flex-nowrap gap-3 justify-between"
+    class="container mx-auto p-8 flex flex-wrap lg:flex-nowrap gap-3 justify-between items-top"
   >
     <div
       class="flex-auto"
@@ -28,10 +28,10 @@
       height="300"
       width="500"
       format="webp"
+      quality="80"
       data-aos="zoom-in-left"
       data-aos-duration="3000"
       data-aos-offset="200"
-      fit="inside"
     />
   </section>
 </template>
