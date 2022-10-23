@@ -20,12 +20,12 @@
       class="rounded-xl shadow-lg shadow-gray-500"
       src="/img/img1.jpg"
       alt="exterior image"
-      width="500"
       height="300"
       format="webp"
       data-aos="zoom-in-left"
       data-aos-duration="3000"
       data-aos-offset="200"
+      fit="inside"
     />
   </section>
 </template>
