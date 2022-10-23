@@ -2,7 +2,12 @@
   <section
     class="container mx-auto p-8 flex flex-wrap lg:flex-nowrap gap-3 justify-between"
   >
-    <div data-aos="fade-right" data-aos-duration="3000" data-aos-offset="200">
+    <div
+      class="flex-auto"
+      data-aos="fade-right"
+      data-aos-duration="3000"
+      data-aos-offset="200"
+    >
       <h2
         class="text-3xl inline-block border-b-4 border-brown pr-8 pb-2 mb-3 text-left font-bold"
       >
@@ -17,7 +22,7 @@
       </p>
     </div>
     <nuxt-img
-      class="rounded-xl shadow-lg shadow-gray-500"
+      class="rounded-xl shadow-lg shadow-gray-500 flex-auto"
       src="/img/img1.jpg"
       alt="exterior image"
       height="300"
