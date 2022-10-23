@@ -1,6 +1,6 @@
 # Life OC Website
 
-A website created by me for Life OC church.
+A website created by me for Life OC church. Work in Progress.
 
 Built With:
 
