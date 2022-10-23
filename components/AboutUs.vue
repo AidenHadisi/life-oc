@@ -32,7 +32,6 @@
       data-aos="zoom-in-left"
       data-aos-duration="3000"
       data-aos-offset="200"
-      fit="inside"
     />
   </section>
 </template>
