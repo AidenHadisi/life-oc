@@ -8,6 +8,7 @@
       playsinline
       autoplay
       muted
+      defaultMuted
       loop
       class="absolute top-0 bottom-0 w-full h-full object-cover opacity-50"
     >

@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: 'https://cms.lifeoc.org/graphql'
+        httpEndpoint: 'https://lifeoc.org/graphql'
       }
     }
   }

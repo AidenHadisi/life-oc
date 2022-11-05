@@ -38,54 +38,18 @@
         ]"
       >
         <NavbarItem
-          v-for="menu of menuList"
-          :key="menu.id"
+          v-for="menu of menuItems"
+          :key="menu.label"
           :uri="menu.uri"
           :label="menu.label"
+          :new-tab="menu.newTab"
         />
       </ul>
     </nav>
   </nav>
 </template>
 <script setup lang="ts">
-const menuList = ref([
-  { id: 1, uri: '/', label: 'Home' },
-  { id: 1, uri: 'https://c2cfamily.org/#resources', label: 'C2C Resources' }
-])
-
-// export interface MenuItem {
-//   id: string
-//   label: string
-//   uri: string
-// }
-
-// interface MenuItemsResponse {
-//   menuItems: {
-//     edges: {
-//       node: MenuItem
-//     }[]
-//   }
-// }
-
-// const query = gql`
-//   query getMenuItems {
-//     menuItems {
-//       edges {
-//         node {
-//           id
-//           label
-//           uri
-//         }
-//       }
-//     }
-//   }
-// `
-
-// const { data: menuResponse, error } = await useAsyncQuery<MenuItemsResponse>(query)
-
-// console.log(error)
-
-// console.log(menuResponse.value)
+const menuItems = useMenu()
 
 const showMenu = ref(false)
 const toggleNav = () => {

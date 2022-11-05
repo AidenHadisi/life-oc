@@ -1,17 +1,24 @@
 <template>
   <footer class="bg-gray-900 text-white p-4">
     <div class="container mx-auto mb-3">
-      <div class="flex flex-col lg:flex-row gap-6 lg:justify-between justify-center lg:items-center">
-        <nuxt-img src="/img/logo.png" width="130" class="max-auto self-center" />
+      <div
+        class="flex flex-col lg:flex-row gap-6 lg:justify-between justify-center lg:items-center"
+      >
+        <nuxt-img
+          src="/img/logo.png"
+          width="130"
+          class="max-auto self-center"
+        />
         <div>
           <h3 class="border-b-2 mb-2 font-bold">
             Links
           </h3>
           <NavbarItem
-            v-for="menu of menuList"
-            :key="menu.id"
+            v-for="menu of menuItems"
+            :key="menu.label"
             :uri="menu.uri"
             :label="menu.label"
+            :new-tab="menu.newTab"
             class="block"
           />
         </div>
@@ -39,8 +46,5 @@
 </template>
 
 <script lang="ts" setup>
-const menuList = ref([
-  { id: 1, uri: '/', label: 'Home' },
-  { id: 1, uri: 'https://c2cfamily.org/#resources', label: 'C2C Resources' }
-])
+const menuItems = useMenu()
 </script>

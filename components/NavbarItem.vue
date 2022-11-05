@@ -1,6 +1,6 @@
 <template>
   <span class="text-gray-100 hover:text-indigo-400">
-    <NuxtLink :to="uri">
+    <NuxtLink :to="uri" :target="newTab ? '_blank' : '_self'">
       {{ label }}
     </NuxtLink>
   </span>
@@ -10,6 +10,7 @@
 interface Props {
   uri: string
   label: string
+  newTab: boolean
 }
 
 const props = defineProps<Props>()
