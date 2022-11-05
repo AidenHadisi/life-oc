@@ -62,7 +62,7 @@ const video = ref<VNodeRef | null>(null)
 
 onMounted(() => {
   if (video.value) {
-    video.value.playbackRate = 0.7
+    video.value.playbackRate = 0.6
   }
 })
 </script>
