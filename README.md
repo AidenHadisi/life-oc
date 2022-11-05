@@ -1,6 +1,6 @@
 # Life OC Website
 
-A website created by me for Life OC church.
+A website created by me for Life OC church. Work in Progress.
 
 Built With:
 
@@ -15,7 +15,7 @@ Built With:
 Make sure to install the dependencies:
 
 ```bash
-yarn install
+yarn
 ```
 
 ## Development Server
