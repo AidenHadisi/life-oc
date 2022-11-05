@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[url('/img/img2.jpg')] relative bg-cover bg-center text-white text-right bg-fixed h-[400px] font-display flex items-center justify-center bg-center"
+    class="bg-[url('/img/img2.jpg')] relative bg-cover bg-center text-white text-right md:bg-fixed h-[400px] font-display flex items-center justify-center"
   >
     <div class="bg-black opacity-70 absolute w-full h-full top-0 left-0" />
     <div
