@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container mx-auto p-8 flex flex-wrap lg:flex-nowrap gap-3 justify-between items-top"
+    class="container mx-auto py-8 max-lg:px-5 flex flex-wrap lg:flex-nowrap gap-3 justify-between items-top"
   >
     <div
       class="flex-auto"

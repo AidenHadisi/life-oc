@@ -4,6 +4,7 @@
     class="relative flex items-center justify-center text-center w-full h-screen overflow-hidden bg-black text-white animate__animated animate__fadeIn animate__slower"
   >
     <video
+      ref="video"
       playsinline
       autoplay
       muted
@@ -15,7 +16,7 @@
 
     <div class="relative px-12">
       <img
-        class="max-h-[calc(100vh_-_300px)] opacity-80 animate__animated animate__zoomIn animate__slower"
+        class="max-h-[calc(100vh_-_300px)] opacity-60 animate__animated animate__zoomIn animate__slower"
         src="/img/logo.png"
         alt="logo"
       />
@@ -53,3 +54,15 @@
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+import { VNodeRef } from 'vue'
+
+const video = ref<VNodeRef | null>(null)
+
+onMounted(() => {
+  if (video.value) {
+    video.value.playbackRate = 0.7
+  }
+})
+</script>
