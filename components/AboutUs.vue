@@ -1,9 +1,9 @@
 <template>
   <section
-    class="container mx-auto py-8 max-lg:px-5 flex flex-wrap lg:flex-nowrap gap-3 justify-between items-top"
+    class="mx-auto max-lg:px-5 flex flex-wrap lg:flex-nowrap gap-3 items-center overflow-hidden justify-center"
   >
     <div
-      class="flex-auto"
+      class="text-left mx-auto max-w-[1150px] p-3"
       data-aos="fade-right"
       data-aos-duration="3000"
       data-aos-offset="200"
@@ -22,13 +22,13 @@
       </p>
     </div>
     <nuxt-img
-      class="rounded-xl shadow-lg shadow-gray-500 flex-auto"
+      class="flex-auto lg:cut-image max-w-[400px] max-lg:mb-3 max-lg:rounded-xl max-lg:shadow-lg max-lg:shadow-gray-500"
       src="/img/img1.jpg"
       alt="exterior image"
-      width="400"
+      width="600"
       format="webp"
       quality="80"
-      data-aos="zoom-in-left"
+      data-aos="fade-left"
       data-aos-duration="3000"
       data-aos-offset="200"
     />
