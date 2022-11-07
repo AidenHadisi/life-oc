@@ -1,15 +1,15 @@
 <template>
   <nav
-    class="w-full fixed top-0 right-0 z-20 font-display uppercase bg-red-brown p-1"
+    class="w-full fixed top-0 right-0 z-20 font-display  uppercase bg-red-brown p-1"
   >
     <nav
-      class="container mx-auto py-3 px-3 md:flex md:justify-between md:items-center"
+      class="container mx-auto py-2 px-3 md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-center">
           <NuxtLink
             to="/"
-            class="text-xl text-gray-100 md:text-2xl hover:text-brown"
+            class="text-lg text-gray-100 md:text-xl hover:text-brown"
           >
             Life Church Of Orange
           </NuxtLink>
@@ -34,7 +34,7 @@
       <ul
         :class="[
           showMenu ? 'flex' : 'hidden',
-          'flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 text-lg font-display'
+          'flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 text-md font-display'
         ]"
       >
         <NavbarItem

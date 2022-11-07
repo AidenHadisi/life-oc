@@ -17,20 +17,20 @@
 
     <div class="relative px-12">
       <img
-        class="max-h-[calc(100vh_-_300px)] opacity-60 animate__animated animate__zoomIn animate__slower"
+        class="max-h-[calc(100vh_-_400px)] opacity-60 animate__animated animate__zoomIn animate__slower"
         src="/img/logo.png"
         alt="logo"
       />
     </div>
-    <footer class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 p-4">
+    <footer class="absolute bottom-0 left-0 w-full p-2 bg-black bg-opacity-60">
       <div
         class="container mx-auto flex flex-wrap flex-col lg:flex-row justify-center lg:justify-between items-center gap-3 lg:gap-6"
       >
         <div class="text-left">
-          <div class="text-lg lg:text-xl inline lg:block">
+          <div class="text-sm lg:text-md inline lg:block">
             Join Us
           </div>
-          <div class="text-lg lg:text-2xl inline lg:block">
+          <div class="text-md lg:text-xl inline lg:block">
             Sundays • 10:15 AM
           </div>
         </div>
@@ -41,14 +41,14 @@
             target="_blank"
           ><img
             src="/img/youtube.svg"
-            class="w-[40px] lg:w-[50px] hover:scale-125 duration-300"
+            class="w-[40px] lg:w-[40px] hover:scale-125 duration-300"
           /></a>
           <a
             href="https://www.facebook.com/lifechurchorangeca"
             target="_blank"
           ><img
             src="/img/facebook.svg"
-            class="w-[40px] lg:w-[50px] hover:scale-125 duration-300"
+            class="w-[40px] lg:w-[40px] hover:scale-125 duration-300"
           /></a>
         </div>
       </div>

@@ -2,7 +2,11 @@
   <article
     class="gap-4 my-2 flex flex-col bg-white rounded-xl justify-between overflow-hidden max-h-[500px] max-lg:mb-3 shadow-lg"
   >
-    <NuxtImg class="block w-full max-h-[200px] hover:scale-110 duration-500" :src="imageUrl" width="400" />
+    <NuxtImg
+      class="block w-full max-h-[200px] hover:scale-110 duration-500 border-b-4 border-brown"
+      :src="imageUrl"
+      width="400"
+    />
     <div class="px-3">
       <h2 class="font-bold text-xl mb-3">
         {{ convert(props.title) }}

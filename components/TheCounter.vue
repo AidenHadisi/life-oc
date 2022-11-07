@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isLive" class="columns-4 max-w-full text-sm lg:text-xl gap-3">
+  <div v-if="!isLive" class="columns-4 max-w-full text-sm lg:text-md text-center gap-3">
     <div>
       <div class="text-[180%] text-brown font-extrabold">
         {{ timeUntil.days() }}
