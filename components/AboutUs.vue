@@ -22,7 +22,7 @@
       </p>
     </div>
     <nuxt-img
-      class="flex-auto lg:cut-image max-w-[400px] max-lg:mb-3 max-lg:rounded-xl max-lg:shadow-lg max-lg:shadow-gray-500"
+      class="flex-auto lg:cut-image max-w-[400px]"
       src="/img/img1.jpg"
       alt="exterior image"
       width="600"
