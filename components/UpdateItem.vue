@@ -1,14 +1,27 @@
 <template>
-  <article class="gap-4 my-2">
-    <NuxtImg class="block w-full rounded-xl" :src="imageUrl" width="300" />
-    <div class="p-2">
+  <article
+    class="gap-4 my-2 flex flex-col bg-white rounded-xl justify-between overflow-hidden max-h-[500px] max-lg:mb-3 shadow-lg"
+  >
+    <NuxtImg class="block w-full max-h-[200px] hover:scale-110 duration-500" :src="imageUrl" width="400" />
+    <div class="px-3">
       <h2 class="font-bold text-xl mb-3">
         {{ convert(props.title) }}
       </h2>
-      <p class="text-md mb-1">
-        {{ convert(props.content.substring(0, 400)) }}...
+      <p class="text-sm mb-1">
+        {{ convert(props.content.substring(0, 350)) }}...
       </p>
-      <small>{{ moment(props.date).fromNow() }} by {{ props.author }}</small>
+    </div>
+    <div class="px-3 pb-3">
+      <a
+        class="p-2 my-1 text-xs inline-block uppercase rounded-lg cursor-pointer bg-brown text-white hover:bg-red-brown transition-all duration-700"
+        href="#"
+        target="_blank"
+      >
+        Read More
+      </a>
+      <div class="text-[0.7rem]">
+        {{ moment(props.date).fromNow() }} by {{ props.author }}
+      </div>
     </div>
   </article>
 </template>
