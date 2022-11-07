@@ -3,5 +3,6 @@
     <TheHeader />
     <AboutUs />
     <JoinUs />
+    <UpdateList />
   </div>
 </template>

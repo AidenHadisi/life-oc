@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Coda', 'cursive'],
+        display: ['Coda', 'serif'],
         sans: ['Roboto', 'sans-serif']
       },
       colors: {

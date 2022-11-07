@@ -22,7 +22,7 @@
         alt="logo"
       />
     </div>
-    <footer class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 p-5">
+    <footer class="absolute bottom-0 left-0 w-full bg-zinc-900 bg-opacity-60 p-4">
       <div
         class="container mx-auto flex flex-wrap flex-col lg:flex-row justify-center lg:justify-between items-center gap-3 lg:gap-6"
       >

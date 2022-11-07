@@ -1,25 +1,25 @@
 <template>
   <div v-if="!isLive" class="columns-4 max-w-full text-sm lg:text-xl gap-3">
     <div>
-      <div class="text-[200%] text-brown font-extrabold">
+      <div class="text-[180%] text-brown font-extrabold">
         {{ timeUntil.days() }}
       </div>
       <div>Days</div>
     </div>
     <div>
-      <div class="text-[200%] text-brown font-extrabold">
+      <div class="text-[180%] text-brown font-extrabold">
         {{ timeUntil.hours() }}
       </div>
       <div>Hours</div>
     </div>
     <div>
-      <div class="text-[200%] text-brown font-extrabold">
+      <div class="text-[180%] text-brown font-extrabold">
         {{ timeUntil.minutes() }}
       </div>
       <div>Minutes</div>
     </div>
     <div>
-      <div class="text-[200%] text-brown font-extrabold">
+      <div class="text-[180%] text-brown font-extrabold">
         {{ timeUntil.seconds() }}
       </div>
       <div>Seconds</div>

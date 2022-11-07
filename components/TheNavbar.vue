@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full fixed top-0 right-0 z-20 font-display uppercase bg-gray-900 p-1"
+    class="w-full fixed top-0 right-0 z-20 font-display uppercase bg-zinc-900 bg-opacity-80 p-1"
   >
     <nav
       class="container mx-auto py-3 px-3 md:flex md:justify-between md:items-center"

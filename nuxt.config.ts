@@ -40,5 +40,8 @@ export default defineNuxtConfig({
         httpEndpoint: 'https://lifeoc.org/graphql'
       }
     }
+  },
+  image: {
+    domains: ['lifeoc.org']
   }
 })
