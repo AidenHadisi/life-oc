@@ -1,5 +1,5 @@
 <template>
-  <span class="text-gray-100 hover:text-indigo-400">
+  <span class="text-gray-100 hover:text-brown">
     <NuxtLink :to="uri" :target="newTab ? '_blank' : '_self'">
       {{ label }}
     </NuxtLink>

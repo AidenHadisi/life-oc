@@ -8,7 +8,8 @@ module.exports = {
         sans: ['Roboto', 'sans-serif']
       },
       colors: {
-        brown: '#9b8c79'
+        brown: '#9b8c79',
+        'red-brown': '#633128'
       }
     }
   },
