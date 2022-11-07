@@ -9,7 +9,7 @@
         <div class="flex items-center justify-center">
           <NuxtLink
             to="/"
-            class="text-xl text-gray-100 md:text-2xl hover:text-indigo-400"
+            class="text-xl text-gray-100 md:text-2xl hover:text-brown"
           >
             Life Church Of Orange
           </NuxtLink>
