@@ -3,7 +3,7 @@
     class="mx-auto max-lg:px-5 flex flex-wrap lg:flex-nowrap gap-3 items-center overflow-hidden justify-center"
   >
     <div
-      class="text-left mx-auto max-w-[1150px] p-3"
+      class="text-left mx-auto max-w-[1150px] p-6"
       data-aos="fade-right"
       data-aos-duration="3000"
       data-aos-offset="200"
@@ -22,7 +22,7 @@
       </p>
     </div>
     <nuxt-img
-      class="flex-auto lg:cut-image max-w-[400px]"
+      class="flex-auto max-lg:hidden cut-image max-w-[400px]"
       src="/img/img1.jpg"
       alt="exterior image"
       width="600"
