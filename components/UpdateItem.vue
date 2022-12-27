@@ -1,9 +1,9 @@
 <template>
   <article
-    class="gap-4 my-2 flex flex-col bg-white rounded-xl justify-between overflow-hidden max-h-[500px] max-lg:mb-3 shadow-lg"
+    class="gap-4 my-2 flex flex-col bg-white rounded-xl justify-between overflow-hidden max-lg:mb-3 shadow-lg"
   >
     <NuxtImg
-      class="block w-full max-h-[200px] hover:scale-110 duration-500 border-b-4 border-brown"
+      class="block w-full max-h-[250px] hover:scale-110 duration-500 border-b-4 border-brown"
       :src="imageUrl"
       width="400"
     />
@@ -12,7 +12,7 @@
         {{ convert(props.title) }}
       </h2>
       <p class="text-sm mb-1">
-        {{ convert(props.content.substring(0, 350)) }}...
+        {{ convert(props.content.substring(0, 300)) }}...
       </p>
     </div>
     <div class="px-3 pb-3">
